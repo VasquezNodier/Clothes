@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+
+
+	<b:navBar brand="CLOTHES" brandHref="index.xhtml" inverse="true" style="color:#a9fd00;"
+		fixed="top">
+		<b:container>
+			<b:navbarLinks pull="right">
+				<b:dropMenu value="Menú" icon-awesome="bars">
+					<b:navLink value="Almacenes" href="almacenLista.xhtml"></b:navLink>
+					<b:navLink value="Cargos" href="cargoLista.xhtml"></b:navLink>
+					<b:navLink value="Categorías" href="categoriaLista.xhtml"></b:navLink>
+					<b:navLink value="Clientes" href="clienteLista.xhtml"></b:navLink>
+					<b:navLink value="Combos" href="comboLista.xhtml"></b:navLink>
+					<b:navLink value="Descuentos" href="descuentoLista.xhtml"></b:navLink>
+					<b:navLink value="Empleados" href="empleadoLista.xhtml"></b:navLink>					
+					<b:navLink value="Productos" href="productoLista.xhtml"></b:navLink>
+				</b:dropMenu>
+				<b:navLink value="Test" href="test.xhtml"></b:navLink>
+				<b:navLink value="Registrarme" href="signup.xhtml"></b:navLink>
+				<b:navLink value="Login" href="login.xhtml" iconAwesome="sign-in"></b:navLink>
+			</b:navbarLinks>
+		</b:container>
+	</b:navBar>
+
+	<ui:remove>
+		<!--
+	    	Hint to editors: The menus follow the Chicago style of capitalization. Please capitalize everything but the "smaller" words. 
+	     -->
+	</ui:remove>
+
+</ui:fragment>

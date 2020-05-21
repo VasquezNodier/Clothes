@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui">
+
+	<b:navBar brand="&copy;Clothes Corporation" fixed="bottom">
+		<p class="navbar-text pull-right">
+			<a href="https://showcase.bootsfaces.net/privacy.jsf">Privacy</a> -
+			<h:outputText
+				value="Nodier el Mejor XD" />
+		</p>
+
+		<link rel="stylesheet" type="text/css"
+			href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+			window
+					.addEventListener(
+							"load",
+							function() {
+								window.cookieconsent
+										.initialise({
+											"palette" : {
+												"popup" : {
+													"background" : "#1d8a8a"
+												},
+												"button" : {
+													"background" : "#f5d948"
+												}
+											},
+											"theme" : "classic",
+											"content" : {
+												"message" : "This site uses cookies to ensure you get the best browsing experience and perform analytics. Clicking Accept Cookies indicates you agree to the use of cookies on your device.",
+												"dismiss" : "Accept Cookies",
+												"href" : "https://showcase.bootsfaces.net/privacy.jsf"
+											}
+										})
+							});
+		</script>
+
+	</b:navBar>
+</ui:fragment>

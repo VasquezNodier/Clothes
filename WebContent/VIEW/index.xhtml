@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+	<title>index</title>
+</h:head>
+
+<h:body style="padding-top: 50px; padding-bottom: 20px;">
+
+	<b:jumbotron>
+		<b:container>
+			<h1>Bienvenido a Clothes</h1>
+			<p>Somos una tienda virtual donde puedes encontrar todo lo que
+				más te gusta.</p>
+			<p>
+				<a href="login.xhtml" class="btn btn-lg btn-info">Iniciar Sesion
+					»</a> <a href="signup.xhtml" class="btn btn-lg btn-info">Registrarse
+					»</a>
+			</p>
+		</b:container>
+
+	</b:jumbotron>
+	
+	<b:container>
+		<b:row>
+			<b:column col-md="6">
+				<h2>Damas</h2>
+				<p>En esta sección encontrarás lo más nuevo, para ti que siempre quieres estar radiante y permanecer como una diva. </p>
+				<p>
+					<b:button outcome="" value="View details »" />
+				</p>
+			</b:column>
+			<b:column col-md="6">
+				<h2>Caballeros</h2>
+				<p>En esta sección la masculinidad tomará mucho más poder, dejando ver la elegancia y la fuerza de nuestros productos.</p>
+				<p>
+					<b:button outcome="" value="View details »" />
+				</p>
+			</b:column>
+
+		</b:row>
+		<hr />
+	</b:container>
+
+	<ui:insert name="nbtop">
+		<ui:include src="TEMPLATE/navbartop.xhtml" />
+	</ui:insert>
+
+	<b:container>
+		<ui:insert name="content" />
+	</b:container>
+
+	<ui:insert name="nbtop">
+		<ui:include src="TEMPLATE/navbarbottom.xhtml" />
+	</ui:insert>
+
+</h:body>
+
+
+</html>

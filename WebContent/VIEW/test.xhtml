@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="STYLES/styles.css"></link>
+<title>Registrar</title>
+</head>
+
+<body>
+
+	<div class="container" id="advanced-search-form">
+		<h2 align="center">Registrarse</h2>
+		<h:form>
+
+			<div class="form-group">
+				<b:inputText styleClass="form-control" placeholder="Identificación"
+					id="Username" style="width: 200px;"
+					value="#{clienteBean.usuario.idUser}"></b:inputText>
+			</div>
+
+			<div class="form-group">
+				<b:inputText placeholder="Nombres" styleClass="form-control"
+					id="Nombres" style="width: 200px;"
+					value="#{clienteBean.usuario.nombresUser}"></b:inputText>
+			</div>
+
+			<div class="form-group">
+				<b:inputText type="text" class="form-control"
+					placeholder="Apellidos" id="Apellidos" style="width: 200px;"
+					value="#{clienteBean.usuario.apellidosUser}"></b:inputText>
+			</div>
+
+
+
+			<div class="form-group">
+				<b:inputText type="text" class="form-control" placeholder="Teléfono"
+					id="Teléfono" style="width: 200px;"
+					value="#{clienteBean.usuario.numTelefonoUser}"></b:inputText>
+			</div>
+			
+			<div class="form-group">
+				<b:inputText type="email" class="form-control" placeholder="Correo"
+					id="Correo" style="width: 200px;"
+					value="#{clienteBean.usuario.emailUser}"></b:inputText>
+			</div>
+
+			<div class="form-group">
+				<b:inputText type="text" class="form-control"
+					placeholder="Dirección" id="Dirección" style="width: 200px;"
+					value="#{clienteBean.usuario.direccionUser}"></b:inputText>
+			</div>
+
+			<div class="form-group">
+				<b:inputText type="text" class="form-control" placeholder="Usuario"
+					id="Usuario" style="width: 200px;"
+					value="#{clienteBean.usuario.usuarioUser}"></b:inputText>
+			</div>
+			<div class="form-group">
+				<b:inputText type="text" class="form-control"
+					placeholder="Contraseña" id="Contraseña" style="width: 200px;"></b:inputText>
+			</div>
+
+
+			<div class="clearfix"></div>
+
+			<p:commandButton styleClass="btn btn-info btn-lg btn-responsive"
+				id="hecho" value="¡Hecho!" action="#{clienteBean.registrarCliente}" />
+
+		</h:form>
+	</div>
+	
+	
+	<ui:insert name="nbtop">
+		<ui:include src="TEMPLATE/navbartop.xhtml" />
+	</ui:insert>
+
+	<b:container>
+		<ui:insert name="content" />
+	</b:container>
+
+
+</body>
+
+</html>
